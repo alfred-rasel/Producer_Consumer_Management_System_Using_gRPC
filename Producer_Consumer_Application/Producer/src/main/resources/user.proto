@@ -3,11 +3,11 @@ syntax = "proto3";
 option java_package = "com.demo.grpc";
 
 service user {
-  rpc registerUser(RegisterNewUser) returns (APIRes); // task 1. to register a new user
-  rpc loginUser(LoginExistingUser) returns (APIRes); // task 2. to login an existing user
-  rpc setProfile(SetProfileInfo) returns (APIRes); // task 3. to set profile info
-  rpc userProfileView(ProfileReq) returns (ProfileView); // task 4. to view profile info
-  rpc updateProfile(UpdateProfileInfo) returns (APIRes); // task 5. to update profile info
+  rpc registerUser(RegisterNewUser) returns (APIRes);
+  rpc loginUser(LoginExistingUser) returns (APIRes);
+  rpc setProfile(SetProfileInfo) returns (APIRes);
+  rpc userProfileView(ProfileReq) returns (ProfileView);
+  rpc updateProfile(UpdateProfileInfo) returns (APIRes); 
 }
 
 message RegisterNewUser {
@@ -53,4 +53,6 @@ message APIRes {
   string responseMessage = 2;
 }
 
-message Void {}
+message Void {
+
+}

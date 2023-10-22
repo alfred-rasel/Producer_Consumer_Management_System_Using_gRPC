@@ -208,10 +208,6 @@ public class GrpcClient {
             }
         }
 
-//        // close the channel
-//        channel.shutdown();
-//        // close the scanner
-//        scanner.close();
 
     }
 }
